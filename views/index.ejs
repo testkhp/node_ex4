@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>메인페이지 접속 성공</div>
+    <!-- 입력한 데이터값을 서버에 요청해서
+       데이터베이스에 저장할 수 있도록 처리
+    -->
+    <form action="/insert" method="get">
+        <input type="text" name="username">
+        <input type="text" name="userid">
+        <select name="address">
+            <option>경기도</option>
+            <option>강원도</option>
+            <option>제주도</option>
+        </select>
+        <button type="submit">전송버튼</button>
+    </form>
+</body>
+</html>
